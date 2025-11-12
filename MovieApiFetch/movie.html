@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini IMDb App</title>
+  <link rel="stylesheet" href="movie.css">
+</head>
+<body>
+  <header>
+    <h1>Mini Movie App</h1>
+    <input type="text" id="movieInput" placeholder="Search movies...">
+    <button id="searchBtn">Search</button>
+  </header>
+
+  <main>
+    <h2 style="text-align:center; margin-top:20px;">🎬 Featured Movies</h2>
+    <div id="moviesGrid"></div>
+  </main>
+
+  <!-- Modal for movie details -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="./movie.js"></script>
+
+  
+</html>
