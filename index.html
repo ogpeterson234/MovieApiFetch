@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mini IMDb App</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ffb800">
 </head>
 <body>
   <header>
     <h1>Mini Movie App</h1>
-    <input type="text" id="movieInput" placeholder="Search movies...">
-    <button id="searchBtn">Search</button>
+    <div class="search-container">
+      <input type="text" id="movieInput" placeholder="Search movies..." />
+      <button id="searchBtn">Search</button>
+    </div>
   </header>
 
   <main>
-    <h2 style="text-align:center; margin-top:20px;">🎬 Featured Movies</h2>
+    <h2>Featured Movies</h2>
     <div id="moviesGrid"></div>
   </main>
 
-  <!-- Modal for movie details -->
   <div id="modal" class="modal">
     <div class="modal-content">
-      <span id="closeModal" class="close">&times;</span>
+      <span id="closeModal" class="close">×</span>
       <div id="modalBody"></div>
     </div>
   </div>
 
-  <script src="./index.js"></script>
-
-  
+  <script src="index.js"></script>
+</body>
 </html>
